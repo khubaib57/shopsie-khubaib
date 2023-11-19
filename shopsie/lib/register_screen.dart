@@ -54,9 +54,10 @@ class RegisterScreen extends StatelessWidget {
                 height: 25,
               ),
                Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    width: 130,
+                    width: 80,
                     height: 2,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20.0),
@@ -72,7 +73,7 @@ class RegisterScreen extends StatelessWidget {
                     width: 15,
                   ),
                   Container(
-                    width: 130,
+                    width: 80,
                     height: 2,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15.0),
@@ -87,8 +88,8 @@ class RegisterScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
-                      height: 130,
-                      width: 130,
+                      height: 100,
+                      width: 100,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15.0),
                         border: Border.all(
@@ -102,8 +103,8 @@ class RegisterScreen extends StatelessWidget {
                     width: 15,
                   ),
                   Container(
-                      height: 130,
-                      width: 130,
+                      height: 100,
+                      width: 100,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15.0),
                         border: Border.all(

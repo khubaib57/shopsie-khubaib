@@ -188,51 +188,57 @@ class MainScreen extends StatelessWidget {
                           containerHeight: 200,
                           containerWidth: 120,
                           textSize: 20,
+                          details: "Introducing the Red Lawn Women's Casual Frok—a chic and comfortable choice for any casual occasion. This vibrant red frock, made from breathable lawn fabric, combines style with affordability. Perfect for a trendy yet reasonably priced look, whether you're brunching with friends or enjoying a leisurely day out.",
                         ),
                         CustomizableProductContainer(
                           imageUrl:
-                              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgRgTDDwj5MmUhD3zjKhRACMSeaWZJe-MggQ&usqp=CAU",
+                              "https://www.limelight.pk/cdn/shop/files/DSC03388_1.jpg?v=1700220250",
                           text: "Red frok",
                           price: "19.99 USD",
                           containerHeight: 200,
                           containerWidth: 120,
                           textSize: 20,
+                          details: "Printed shirt with embroidery and cuff Patti with slit Slub Khaddar",
                         ),
                         CustomizableProductContainer(
                           imageUrl:
-                              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgRgTDDwj5MmUhD3zjKhRACMSeaWZJe-MggQ&usqp=CAU",
+                              "https://www.limelight.pk/cdn/shop/files/DSC05162.jpg?v=1700218768",
                           text: "Red frok",
                           price: "19.99 USD",
                           containerHeight: 200,
                           containerWidth: 120,
                           textSize: 20,
+                          details: "Paste print shirt with button detailing on the neckline,Fabric: Slub Khaddar",
                         ),
                         CustomizableProductContainer(
                           imageUrl:
-                              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgRgTDDwj5MmUhD3zjKhRACMSeaWZJe-MggQ&usqp=CAU",
+                              "https://www.krosskulture.com/cdn/shop/files/DSC04431_360x.jpg?v=1700133108",
                           text: "Red frok",
                           price: "19.99 USD",
                           containerHeight: 200,
                           containerWidth: 120,
                           textSize: 20,
+                          details: "Bold cross-stitched floral embroidery on dark green shirt is a statement.Complimented with deliciated prayed sleeves. It was paired with a plain cambric pants.",
                         ),
                         CustomizableProductContainer(
                           imageUrl:
-                              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgRgTDDwj5MmUhD3zjKhRACMSeaWZJe-MggQ&usqp=CAU",
+                              "https://www.krosskulture.com/cdn/shop/files/1_56d22a58-aba3-4e8c-89b3-9adffc542d52_360x.jpg?v=1699467814",
                           text: "Red frok",
                           price: "19.99 USD",
                           containerHeight: 200,
                           containerWidth: 120,
                           textSize: 20,
+                          details: "This luscious ensemble is the perfect choice for a modern, chic look. Thedreamy pink, contemporary shirt stands out with its intricate cutwork embroideryandsequins embellishments on sleeves",
                         ),
                         CustomizableProductContainer(
                           imageUrl:
-                              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgRgTDDwj5MmUhD3zjKhRACMSeaWZJe-MggQ&usqp=CAU",
+                              "https://www.krosskulture.com/cdn/shop/files/1_a4c5414b-d27c-4b00-87d8-2f3e4b0e8cdb_360x.jpg?v=1699468822",
                           text: "Red frok",
                           price: "19.99 USD",
                           containerHeight: 200,
                           containerWidth: 120,
                           textSize: 20,
+                          details: "A gracefully elegant composition is layered over this classy ensemblerendered in a refreshing Pink shade. It depicts a classy silhouette shirt beautifullyadorned with captivating floral embroidery in crosstitch with embroidered pants.",
                         ),
                       ],
                     )),
@@ -253,7 +259,8 @@ class MainScreen extends StatelessWidget {
                     price: "Raincoats,sweaters,etc.",
                     containerHeight: 400,
                     containerWidth: 350,
-                    textSize: 25),
+                    textSize: 25,
+                    details: "Elevate your style with our premium quality Blue Fur Jacket for women. Crafted to perfection, this luxurious piece combines warmth with a touch of sophistication. The rich blue hue adds a bold and trendy flair to your ensemble. Experience the epitome of comfort and fashion with this statement piece, designed to keep you both cozy and chic in any setting",),
                 CustomizableProductContainer(
                     imageUrl:
                         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimd5k3xHoti82DFhrjm4VCZmeQSUzfW4ntw&usqp=CAU",
@@ -261,15 +268,17 @@ class MainScreen extends StatelessWidget {
                     price: "Shoes,Sandas,etc.",
                     containerHeight: 400,
                     containerWidth: 350,
-                    textSize: 25),
+                    textSize: 25,
+                    details: "Step into timeless elegance with our Women's Brown Leather Shoes. Crafted with impeccable attention to detail, these shoes exude sophistication and versatility. The rich brown hue complements a myriad of outfits, making them a wardrobe staple. Enjoy the perfect blend of comfort and style as you stride confidently through any occasion.",),
                 CustomizableProductContainer(
                     imageUrl:
                         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs9bWTMAPk7WNS2PZoCKZY6cpzdKVTJ8Ca6A&usqp=CAU",
                     text: "Light dresses",
-                    price: "Evening,caua,home",
+                    price: "Evening,casual,home",
                     containerHeight: 400,
                     containerWidth: 350,
-                    textSize: 25),
+                    textSize: 25,
+                    details: "Refresh your casual wardrobe with our Light White Casual Top for women. Effortlessly chic and versatile, this top is a go-to choice for a relaxed yet stylish look. The light, airy fabric ensures comfort, while the timeless white hue adds a touch of understated elegance. Whether paired with jeans for a laid-back outing or dressed up with accessories for a casual evening, this top is a versatile essential",),
                 hspace,
                 Center(
                   child: Text(

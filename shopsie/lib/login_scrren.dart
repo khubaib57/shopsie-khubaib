@@ -8,7 +8,7 @@ class LoginSceen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.white,
           body: Container(
             color: Colors.white,
             margin: EdgeInsets.all(10),
@@ -52,9 +52,10 @@ class LoginSceen extends StatelessWidget {
                   height: 30,
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      width: 130,
+                      width: 80,
                       height: 2,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20.0),
@@ -70,7 +71,7 @@ class LoginSceen extends StatelessWidget {
                       width: 15,
                     ),
                     Container(
-                      width: 130,
+                      width: 80,
                       height: 2,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15.0),
@@ -85,8 +86,8 @@ class LoginSceen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Container(
-                        height: 130,
-                        width: 130,
+                        height: 100,
+                        width: 100,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15.0),
                           border: Border.all(
@@ -100,8 +101,8 @@ class LoginSceen extends StatelessWidget {
                       width: 15,
                     ),
                     Container(
-                        height: 130,
-                        width: 130,
+                        height: 100,
+                        width: 100,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(15.0),
                           border: Border.all(

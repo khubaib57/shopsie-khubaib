@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'description.dart';
 
 class TextFeild extends StatelessWidget {
   final String? hint;
@@ -55,6 +56,7 @@ class CustomizableProductContainer extends StatelessWidget {
   final double containerHeight;
   final double containerWidth;
   final double textSize;
+  final String details;
 
   const CustomizableProductContainer({
     required this.imageUrl,
@@ -63,44 +65,59 @@ class CustomizableProductContainer extends StatelessWidget {
     required this.containerHeight,
     required this.containerWidth,
     required this.textSize,
+    required this.details,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.all(10.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Container(
-            height: containerHeight,
-            width: containerWidth,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10.0),
-              image: DecorationImage(
-                image: NetworkImage(imageUrl),
-                fit: BoxFit.cover,
+    return InkWell(
+      onTap: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context){return Description(imageUrl: imageUrl,price: price,text: text,details: details);}));
+
+      },
+      child: Card(
+        elevation: 5,
+        shape: RoundedRectangleBorder(
+         borderRadius: BorderRadius.circular(5.0),
+        ),
+        child : Padding(
+          padding: EdgeInsets.all(15.0),
+        child: Container(
+          margin: EdgeInsets.all(10.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                height: containerHeight,
+                width: containerWidth,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10.0),
+                  image: DecorationImage(
+                    image: NetworkImage(imageUrl),
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
-            ),
+              SizedBox(height: 10),
+              Text(
+                text,
+                style: TextStyle(
+                  fontSize: textSize,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(height: 10),
+              Text(
+                price,
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.grey,
+                ),
+              ),
+            ],
           ),
-          SizedBox(height: 10),
-          Text(
-            text,
-            style: TextStyle(
-              fontSize: textSize,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          SizedBox(height: 10),
-          Text(
-            price,
-            style: TextStyle(
-              fontSize: 14,
-              color: Colors.grey,
-            ),
-          ),
-        ],
-      ),
+        ),
+      )),
     );
   }
 }
