@@ -8,7 +8,7 @@ class LoginSceen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.black,
           body: Container(
             color: Colors.white,
             margin: EdgeInsets.all(10),
