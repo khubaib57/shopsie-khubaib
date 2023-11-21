@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:shopsie/drawer.dart';
 import 'common_things.dart';
 
+
+
+
 class MainScreen extends StatelessWidget {
+
   MainScreen({super.key});
+  GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   SizedBox hspace = SizedBox(
     height: 35,
@@ -15,6 +21,14 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
+      
+//       drawer :IconButton(
+//      onPressed: () {
+//      Drawerr();     
+//   },
+//       icon: Icon(Icons.menu, color: Colors.black),
+// ), 
       // backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -37,12 +51,19 @@ class MainScreen extends StatelessWidget {
           Icon(Icons.shopping_cart, color: Colors.black),
           Icon(Icons.person, color: Colors.black),
         ],
-        leading: IconButton(
-          onPressed: () {},
-          icon: IconButton(
-              onPressed: () {}, icon: Icon(Icons.menu, color: Colors.black)),
-        ),
+        leading:  IconButton(
+  onPressed: () {
+    _scaffoldKey.currentState?.openDrawer();
+  },
+  icon: Icon(Icons.menu, color: Colors.black),
+),
       ),
+           
+        
+        
+        
+        
+      
 
       body: SingleChildScrollView(
         child: Column(
@@ -611,6 +632,7 @@ class MainScreen extends StatelessWidget {
           ],
         ),
       ),
+       drawer: Drawerr(),
     );
   }
 }

@@ -186,3 +186,26 @@ class SimpleImageDescriptionCard extends StatelessWidget {
   }
 }
 
+class Listtilee extends StatelessWidget {
+  final IconData icon;
+  final String text;
+  final VoidCallback? onPressed;
+
+    const Listtilee({
+    required this.icon,
+    required this.text,
+    this.onPressed,
+
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      leading: Icon(icon,color: Colors.black,),
+      title: Text(text,style: TextStyle(color: Colors.black),),
+      onTap: onPressed,
+
+   
+    );
+  }
+}
