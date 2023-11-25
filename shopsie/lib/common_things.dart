@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopsie/main_screen.dart';
 import 'description.dart';
 
 class TextFeild extends StatelessWidget {
@@ -23,8 +24,6 @@ class TextFeild extends StatelessWidget {
   }
 }
 
-
-
 class CustomElevatedButton extends StatelessWidget {
   final String buttonText;
   final VoidCallback? onPressed;
@@ -35,19 +34,20 @@ class CustomElevatedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onPressed,
-      child: Text(buttonText,style: TextStyle(fontSize: 25),),
+      child: Text(
+        buttonText,
+        style: TextStyle(fontSize: 25),
+      ),
       style: ElevatedButton.styleFrom(
-         backgroundColor: Colors.purple,
+        backgroundColor: Colors.purple,
         minimumSize: Size(300, 50),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(25.0),
         ),
-       
       ),
     );
   }
 }
-
 
 class CustomizableProductContainer extends StatelessWidget {
   final String imageUrl;
@@ -71,53 +71,55 @@ class CustomizableProductContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context){return Description(imageUrl: imageUrl,price: price,text: text,details: details);}));
-
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+          return Description(
+              imageUrl: imageUrl, price: price, text: text, details: details);
+        }));
       },
       child: Card(
-        elevation: 5,
-        shape: RoundedRectangleBorder(
-         borderRadius: BorderRadius.circular(5.0),
-        ),
-        child : Padding(
-          padding: EdgeInsets.all(15.0),
-        child: Container(
-          margin: EdgeInsets.all(10.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                height: containerHeight,
-                width: containerWidth,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10.0),
-                  image: DecorationImage(
-                    image: NetworkImage(imageUrl),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              SizedBox(height: 10),
-              Text(
-                text,
-                style: TextStyle(
-                  fontSize: textSize,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(height: 10),
-              Text(
-                price,
-                style: TextStyle(
-                  fontSize: 14,
-                  color: Colors.grey,
-                ),
-              ),
-            ],
+          elevation: 5,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(5.0),
           ),
-        ),
-      )),
+          child: Padding(
+            padding: EdgeInsets.all(15.0),
+            child: Container(
+              margin: EdgeInsets.all(10.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    height: containerHeight,
+                    width: containerWidth,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10.0),
+                      image: DecorationImage(
+                        image: NetworkImage(imageUrl),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 10),
+                  Text(
+                    text,
+                    style: TextStyle(
+                      fontSize: textSize,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(height: 10),
+                  Text(
+                    price,
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.grey,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          )),
     );
   }
 }
@@ -145,8 +147,8 @@ class SimpleImageDescriptionCard extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            width: 65, 
-            height: 65, 
+            width: 65,
+            height: 65,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(
@@ -162,10 +164,7 @@ class SimpleImageDescriptionCard extends StatelessWidget {
               children: [
                 Text(
                   "Price: $price",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20
-                  ),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
                 SizedBox(height: 5),
                 Text(
@@ -191,21 +190,57 @@ class Listtilee extends StatelessWidget {
   final String text;
   final VoidCallback? onPressed;
 
-    const Listtilee({
+  const Listtilee({
     required this.icon,
     required this.text,
     this.onPressed,
-
   });
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Icon(icon,color: Colors.black,),
-      title: Text(text,style: TextStyle(color: Colors.black),),
+      leading: Icon(
+        icon,
+        color: Colors.black,
+      ),
+      title: Text(
+        text,
+        style: TextStyle(color: Colors.black),
+      ),
       onTap: onPressed,
-
-   
     );
+  }
+}
+
+class DrawerContainer extends StatelessWidget {
+
+  final String imageUrl;
+  final String text;
+
+  const DrawerContainer({
+    
+    required this. imageUrl,
+   required this. text,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+              children: [
+                Container(
+                  height: 120,
+
+                child: Image.network( imageUrl, fit: BoxFit.cover,),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                ),   
+                
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Text(text,style: TextStyle(fontSize: 18),),
+              ],
+            );
   }
 }

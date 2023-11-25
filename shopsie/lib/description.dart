@@ -63,7 +63,7 @@ final String price;
       Text(
                 text,
                 style: TextStyle(
-                  fontSize: 30,
+                  fontSize: 29,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -71,7 +71,7 @@ final String price;
       Text(
                 price,
                 style: TextStyle(
-                  fontSize: 30,
+                  fontSize: 29,
                   color: Colors.purple,
                 ),
               ),
@@ -79,7 +79,7 @@ final String price;
            Text(
                 "Product Details",
                 style: TextStyle(
-                  fontSize: 21,
+                  fontSize: 20,
                   fontWeight: FontWeight.w600,
                 ),
               ),
@@ -87,7 +87,7 @@ final String price;
               Text(
                 details,
                 style: TextStyle(
-                  fontSize: 17,
+                  fontSize: 15,
                   color: const Color.fromARGB(255, 62, 62, 62)
 
                 ),
