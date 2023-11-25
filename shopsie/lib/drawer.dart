@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopsie/categories.dart';
+import 'package:shopsie/restofcategories.dart';
 import 'common_things.dart';
 class Drawerr extends StatelessWidget {
   const Drawerr({super.key});
@@ -92,13 +93,283 @@ class Drawerr extends StatelessWidget {
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZAIhTI-OW-VCfBw4ER5PVPpOBqwdKfBNd4w&usqp=CAU",
   ],
   texts: [
-    "long sleeve t-shirts",
+    "Shirts",
     "Sliders",
     "Slippers",
     "long sleeve top",
    "slip dress",
     "Nike Slides",
   ],
+  onTap: [
+       (){
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return AllCategories(
+  title: "Shirts",
+  imageUrls: [
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcu10cHoVjy1Uq8JD9y9cCO4f2OjGJi94CZQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqu2UCyDHkBlEq8daM16H8DVkLXAeUADHQ_Q&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7zxdXeSSPBZOYlEWILQNx5YB2I3XtJiGrA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnWsYiKmJBsMDF8FdAS_sJOxavai5AKxkiw&usqp=CAU",
+  ],
+  texts: [
+    "Formal shirt",
+    "flowral shirt ",
+    "polo shirt",
+    "t shirt ",
+   "check shirt",
+    "full sleeve t shirt",
+  ],
+  price: [
+    "66 USD",
+    "88 USD",
+    "05 USD",
+    "21 USD",
+   "63 USD",
+    "83 USD",
+
+  ],
+  details: [
+    "A tailored classic, the formal shirt combines sophistication and professionalism with its crisp lines and high-quality fabric—an essential for refined occasions.",
+    "Embrace nature's charm with the vibrant floral shirt, a playful yet stylish choice that effortlessly transitions from casual outings to laid-back gatherings.",
+    "Effortlessly merging comfort and style, the polo shirt's collared neckline and short sleeves make it a versatile, go-to option for both active pursuits and casual occasions.",
+    "The epitome of simplicity and comfort, the classic t-shirt is a daily essential, providing a versatile canvas for self-expression in various designs and styles.",
+   "Timeless and versatile, the check shirt adds casual sophistication with structured designs, effortlessly balancing a smart yet relaxed look for all seasons.",
+    "Elevate casual style with the full sleeve t-shirt—ideal for cooler weather and expressing your personality through various colors and designs. Fashion meets functionality in this must-have wardrobe staple.",
+
+  ]
+  );
+
+                }));
+       
+       },
+  
+  (){
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return AllCategories(
+  title: "Sliders",
+  imageUrls: [
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcu10cHoVjy1Uq8JD9y9cCO4f2OjGJi94CZQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqu2UCyDHkBlEq8daM16H8DVkLXAeUADHQ_Q&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7zxdXeSSPBZOYlEWILQNx5YB2I3XtJiGrA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnWsYiKmJBsMDF8FdAS_sJOxavai5AKxkiw&usqp=CAU",
+  ],
+  texts: [
+    "Formal shirt",
+    "flowral shirt ",
+    "polo shirt",
+    "t shirt ",
+   "check shirt",
+    "full sleeve t shirt",
+  ],
+  price: [
+    "66 USD",
+    "88 USD",
+    "05 USD",
+    "21 USD",
+   "63 USD",
+    "83 USD",
+
+  ],
+  details: [
+    "A tailored classic, the formal shirt combines sophistication and professionalism with its crisp lines and high-quality fabric—an essential for refined occasions.",
+    "Embrace nature's charm with the vibrant floral shirt, a playful yet stylish choice that effortlessly transitions from casual outings to laid-back gatherings.",
+    "Effortlessly merging comfort and style, the polo shirt's collared neckline and short sleeves make it a versatile, go-to option for both active pursuits and casual occasions.",
+    "The epitome of simplicity and comfort, the classic t-shirt is a daily essential, providing a versatile canvas for self-expression in various designs and styles.",
+   "Timeless and versatile, the check shirt adds casual sophistication with structured designs, effortlessly balancing a smart yet relaxed look for all seasons.",
+    "Elevate casual style with the full sleeve t-shirt—ideal for cooler weather and expressing your personality through various colors and designs. Fashion meets functionality in this must-have wardrobe staple.",
+
+  ],
+);
+
+                }));
+       
+       },
+(){
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return AllCategories(
+  title: "Slippers",
+  imageUrls: [
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcu10cHoVjy1Uq8JD9y9cCO4f2OjGJi94CZQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqu2UCyDHkBlEq8daM16H8DVkLXAeUADHQ_Q&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7zxdXeSSPBZOYlEWILQNx5YB2I3XtJiGrA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnWsYiKmJBsMDF8FdAS_sJOxavai5AKxkiw&usqp=CAU",
+  ],
+  texts: [
+    "Formal shirt",
+    "flowral shirt ",
+    "polo shirt",
+    "t shirt ",
+   "check shirt",
+    "full sleeve t shirt",
+  ],
+  price: [
+    "66 USD",
+    "88 USD",
+    "05 USD",
+    "21 USD",
+   "63 USD",
+    "83 USD",
+
+  ],
+  details: [
+    "A tailored classic, the formal shirt combines sophistication and professionalism with its crisp lines and high-quality fabric—an essential for refined occasions.",
+    "Embrace nature's charm with the vibrant floral shirt, a playful yet stylish choice that effortlessly transitions from casual outings to laid-back gatherings.",
+    "Effortlessly merging comfort and style, the polo shirt's collared neckline and short sleeves make it a versatile, go-to option for both active pursuits and casual occasions.",
+    "The epitome of simplicity and comfort, the classic t-shirt is a daily essential, providing a versatile canvas for self-expression in various designs and styles.",
+   "Timeless and versatile, the check shirt adds casual sophistication with structured designs, effortlessly balancing a smart yet relaxed look for all seasons.",
+    "Elevate casual style with the full sleeve t-shirt—ideal for cooler weather and expressing your personality through various colors and designs. Fashion meets functionality in this must-have wardrobe staple.",
+
+  ],
+);
+
+                }));
+       
+       },
+ (){
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return AllCategories(
+  title: "Long Sleeve top",
+  imageUrls: [
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcu10cHoVjy1Uq8JD9y9cCO4f2OjGJi94CZQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqu2UCyDHkBlEq8daM16H8DVkLXAeUADHQ_Q&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7zxdXeSSPBZOYlEWILQNx5YB2I3XtJiGrA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnWsYiKmJBsMDF8FdAS_sJOxavai5AKxkiw&usqp=CAU",
+  ],
+  texts: [
+    "Formal shirt",
+    "flowral shirt ",
+    "polo shirt",
+    "t shirt ",
+   "check shirt",
+    "full sleeve t shirt",
+  ],
+  price: [
+    "66 USD",
+    "88 USD",
+    "05 USD",
+    "21 USD",
+   "63 USD",
+    "83 USD",
+
+  ],
+  details: [
+    "A tailored classic, the formal shirt combines sophistication and professionalism with its crisp lines and high-quality fabric—an essential for refined occasions.",
+    "Embrace nature's charm with the vibrant floral shirt, a playful yet stylish choice that effortlessly transitions from casual outings to laid-back gatherings.",
+    "Effortlessly merging comfort and style, the polo shirt's collared neckline and short sleeves make it a versatile, go-to option for both active pursuits and casual occasions.",
+    "The epitome of simplicity and comfort, the classic t-shirt is a daily essential, providing a versatile canvas for self-expression in various designs and styles.",
+   "Timeless and versatile, the check shirt adds casual sophistication with structured designs, effortlessly balancing a smart yet relaxed look for all seasons.",
+    "Elevate casual style with the full sleeve t-shirt—ideal for cooler weather and expressing your personality through various colors and designs. Fashion meets functionality in this must-have wardrobe staple.",
+
+  ],
+);
+
+                }));
+       
+       },
+       (){
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return AllCategories(
+  title: "Slip Dress",
+  imageUrls: [
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcu10cHoVjy1Uq8JD9y9cCO4f2OjGJi94CZQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqu2UCyDHkBlEq8daM16H8DVkLXAeUADHQ_Q&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7zxdXeSSPBZOYlEWILQNx5YB2I3XtJiGrA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnWsYiKmJBsMDF8FdAS_sJOxavai5AKxkiw&usqp=CAU",
+  ],
+  texts: [
+    "Formal shirt",
+    "flowral shirt ",
+    "polo shirt",
+    "t shirt ",
+   "check shirt",
+    "full sleeve t shirt",
+  ],
+  price: [
+    "66 USD",
+    "88 USD",
+    "05 USD",
+    "21 USD",
+   "63 USD",
+    "83 USD",
+
+  ],
+  details: [
+    "A tailored classic, the formal shirt combines sophistication and professionalism with its crisp lines and high-quality fabric—an essential for refined occasions.",
+    "Embrace nature's charm with the vibrant floral shirt, a playful yet stylish choice that effortlessly transitions from casual outings to laid-back gatherings.",
+    "Effortlessly merging comfort and style, the polo shirt's collared neckline and short sleeves make it a versatile, go-to option for both active pursuits and casual occasions.",
+    "The epitome of simplicity and comfort, the classic t-shirt is a daily essential, providing a versatile canvas for self-expression in various designs and styles.",
+   "Timeless and versatile, the check shirt adds casual sophistication with structured designs, effortlessly balancing a smart yet relaxed look for all seasons.",
+    "Elevate casual style with the full sleeve t-shirt—ideal for cooler weather and expressing your personality through various colors and designs. Fashion meets functionality in this must-have wardrobe staple.",
+
+  ],
+);
+
+                }));
+       
+       },
+ (){
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return AllCategories(
+  title: "Nike Sliders",
+  imageUrls: [
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcu10cHoVjy1Uq8JD9y9cCO4f2OjGJi94CZQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqu2UCyDHkBlEq8daM16H8DVkLXAeUADHQ_Q&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7zxdXeSSPBZOYlEWILQNx5YB2I3XtJiGrA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnWsYiKmJBsMDF8FdAS_sJOxavai5AKxkiw&usqp=CAU",
+  ],
+  texts: [
+    "Formal shirt",
+    "flowral shirt ",
+    "polo shirt",
+    "t shirt ",
+   "check shirt",
+    "full sleeve t shirt",
+  ],
+  price: [
+    "66 USD",
+    "88 USD",
+    "05 USD",
+    "21 USD",
+   "63 USD",
+    "83 USD",
+
+  ],
+  details: [
+    "A tailored classic, the formal shirt combines sophistication and professionalism with its crisp lines and high-quality fabric—an essential for refined occasions.",
+    "Embrace nature's charm with the vibrant floral shirt, a playful yet stylish choice that effortlessly transitions from casual outings to laid-back gatherings.",
+    "Effortlessly merging comfort and style, the polo shirt's collared neckline and short sleeves make it a versatile, go-to option for both active pursuits and casual occasions.",
+    "The epitome of simplicity and comfort, the classic t-shirt is a daily essential, providing a versatile canvas for self-expression in various designs and styles.",
+   "Timeless and versatile, the check shirt adds casual sophistication with structured designs, effortlessly balancing a smart yet relaxed look for all seasons.",
+    "Elevate casual style with the full sleeve t-shirt—ideal for cooler weather and expressing your personality through various colors and designs. Fashion meets functionality in this must-have wardrobe staple.",
+
+  ],
+);
+
+                }));
+       
+       },
+
+
+
+
+
+
+
+
+],
+  
 );
 
                 }));
@@ -111,7 +382,7 @@ class Drawerr extends StatelessWidget {
        Listtilee(icon: Icons.shop,text: "Shirts",
        onPressed: (){
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return Categoties(
+                return AllCategories(
   title: "Shirts",
   imageUrls: [
      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
@@ -128,6 +399,24 @@ class Drawerr extends StatelessWidget {
     "t shirt ",
    "check shirt",
     "full sleeve t shirt",
+  ],
+  price: [
+    "66 USD",
+    "88 USD",
+    "05 USD",
+    "21 USD",
+   "63 USD",
+    "83 USD",
+
+  ],
+  details: [
+    "A tailored classic, the formal shirt combines sophistication and professionalism with its crisp lines and high-quality fabric—an essential for refined occasions.",
+    "Embrace nature's charm with the vibrant floral shirt, a playful yet stylish choice that effortlessly transitions from casual outings to laid-back gatherings.",
+    "Effortlessly merging comfort and style, the polo shirt's collared neckline and short sleeves make it a versatile, go-to option for both active pursuits and casual occasions.",
+    "The epitome of simplicity and comfort, the classic t-shirt is a daily essential, providing a versatile canvas for self-expression in various designs and styles.",
+   "Timeless and versatile, the check shirt adds casual sophistication with structured designs, effortlessly balancing a smart yet relaxed look for all seasons.",
+    "Elevate casual style with the full sleeve t-shirt—ideal for cooler weather and expressing your personality through various colors and designs. Fashion meets functionality in this must-have wardrobe staple.",
+
   ],
 );
 
@@ -138,10 +427,10 @@ class Drawerr extends StatelessWidget {
 
 
        Listtilee(icon: Icons.shop,text: "Bottoms",
-       onPressed: (){
+             onPressed: (){
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return Categoties(
-  title: "Shirts",
+                return AllCategories(
+  title: "Sliders",
   imageUrls: [
      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
@@ -157,6 +446,24 @@ class Drawerr extends StatelessWidget {
     "t shirt ",
    "check shirt",
     "full sleeve t shirt",
+  ],
+  price: [
+    "66 USD",
+    "88 USD",
+    "05 USD",
+    "21 USD",
+   "63 USD",
+    "83 USD",
+
+  ],
+  details: [
+    "A tailored classic, the formal shirt combines sophistication and professionalism with its crisp lines and high-quality fabric—an essential for refined occasions.",
+    "Embrace nature's charm with the vibrant floral shirt, a playful yet stylish choice that effortlessly transitions from casual outings to laid-back gatherings.",
+    "Effortlessly merging comfort and style, the polo shirt's collared neckline and short sleeves make it a versatile, go-to option for both active pursuits and casual occasions.",
+    "The epitome of simplicity and comfort, the classic t-shirt is a daily essential, providing a versatile canvas for self-expression in various designs and styles.",
+   "Timeless and versatile, the check shirt adds casual sophistication with structured designs, effortlessly balancing a smart yet relaxed look for all seasons.",
+    "Elevate casual style with the full sleeve t-shirt—ideal for cooler weather and expressing your personality through various colors and designs. Fashion meets functionality in this must-have wardrobe staple.",
+
   ],
 );
 
@@ -164,10 +471,10 @@ class Drawerr extends StatelessWidget {
        
        },),
        Listtilee(icon: Icons.shop,text: "Shoes",
-       onPressed: (){
+              onPressed: (){
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return Categoties(
-  title: "Shirts",
+                return AllCategories(
+  title: "Slippers",
   imageUrls: [
      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
@@ -183,6 +490,24 @@ class Drawerr extends StatelessWidget {
     "t shirt ",
    "check shirt",
     "full sleeve t shirt",
+  ],
+  price: [
+    "66 USD",
+    "88 USD",
+    "05 USD",
+    "21 USD",
+   "63 USD",
+    "83 USD",
+
+  ],
+  details: [
+    "A tailored classic, the formal shirt combines sophistication and professionalism with its crisp lines and high-quality fabric—an essential for refined occasions.",
+    "Embrace nature's charm with the vibrant floral shirt, a playful yet stylish choice that effortlessly transitions from casual outings to laid-back gatherings.",
+    "Effortlessly merging comfort and style, the polo shirt's collared neckline and short sleeves make it a versatile, go-to option for both active pursuits and casual occasions.",
+    "The epitome of simplicity and comfort, the classic t-shirt is a daily essential, providing a versatile canvas for self-expression in various designs and styles.",
+   "Timeless and versatile, the check shirt adds casual sophistication with structured designs, effortlessly balancing a smart yet relaxed look for all seasons.",
+    "Elevate casual style with the full sleeve t-shirt—ideal for cooler weather and expressing your personality through various colors and designs. Fashion meets functionality in this must-have wardrobe staple.",
+
   ],
 );
 
@@ -190,10 +515,10 @@ class Drawerr extends StatelessWidget {
        
        },),
        Listtilee(icon: Icons.shop,text: "Heels",
-       onPressed: (){
+             onPressed: (){
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return Categoties(
-  title: "Shirts",
+                return AllCategories(
+  title: "Long Sleeve top",
   imageUrls: [
      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
@@ -209,6 +534,24 @@ class Drawerr extends StatelessWidget {
     "t shirt ",
    "check shirt",
     "full sleeve t shirt",
+  ],
+  price: [
+    "66 USD",
+    "88 USD",
+    "05 USD",
+    "21 USD",
+   "63 USD",
+    "83 USD",
+
+  ],
+  details: [
+    "A tailored classic, the formal shirt combines sophistication and professionalism with its crisp lines and high-quality fabric—an essential for refined occasions.",
+    "Embrace nature's charm with the vibrant floral shirt, a playful yet stylish choice that effortlessly transitions from casual outings to laid-back gatherings.",
+    "Effortlessly merging comfort and style, the polo shirt's collared neckline and short sleeves make it a versatile, go-to option for both active pursuits and casual occasions.",
+    "The epitome of simplicity and comfort, the classic t-shirt is a daily essential, providing a versatile canvas for self-expression in various designs and styles.",
+   "Timeless and versatile, the check shirt adds casual sophistication with structured designs, effortlessly balancing a smart yet relaxed look for all seasons.",
+    "Elevate casual style with the full sleeve t-shirt—ideal for cooler weather and expressing your personality through various colors and designs. Fashion meets functionality in this must-have wardrobe staple.",
+
   ],
 );
 
@@ -216,10 +559,10 @@ class Drawerr extends StatelessWidget {
        
        },),
        Listtilee(icon: Icons.watch,text: "Accessories",
-       onPressed: (){
+             onPressed: (){
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return Categoties(
-  title: "Shirts",
+                return AllCategories(
+  title: "Slip Dress",
   imageUrls: [
      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
@@ -235,6 +578,24 @@ class Drawerr extends StatelessWidget {
     "t shirt ",
    "check shirt",
     "full sleeve t shirt",
+  ],
+  price: [
+    "66 USD",
+    "88 USD",
+    "05 USD",
+    "21 USD",
+   "63 USD",
+    "83 USD",
+
+  ],
+  details: [
+    "A tailored classic, the formal shirt combines sophistication and professionalism with its crisp lines and high-quality fabric—an essential for refined occasions.",
+    "Embrace nature's charm with the vibrant floral shirt, a playful yet stylish choice that effortlessly transitions from casual outings to laid-back gatherings.",
+    "Effortlessly merging comfort and style, the polo shirt's collared neckline and short sleeves make it a versatile, go-to option for both active pursuits and casual occasions.",
+    "The epitome of simplicity and comfort, the classic t-shirt is a daily essential, providing a versatile canvas for self-expression in various designs and styles.",
+   "Timeless and versatile, the check shirt adds casual sophistication with structured designs, effortlessly balancing a smart yet relaxed look for all seasons.",
+    "Elevate casual style with the full sleeve t-shirt—ideal for cooler weather and expressing your personality through various colors and designs. Fashion meets functionality in this must-have wardrobe staple.",
+
   ],
 );
 
@@ -242,10 +603,10 @@ class Drawerr extends StatelessWidget {
        
        },),
        Listtilee(icon: Icons.shop,text: "Tops",
-       onPressed: (){
+              onPressed: (){
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return Categoties(
-  title: "Shirts",
+                return AllCategories(
+  title: "Nike Sliders",
   imageUrls: [
      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
@@ -261,6 +622,24 @@ class Drawerr extends StatelessWidget {
     "t shirt ",
    "check shirt",
     "full sleeve t shirt",
+  ],
+  price: [
+    "66 USD",
+    "88 USD",
+    "05 USD",
+    "21 USD",
+   "63 USD",
+    "83 USD",
+
+  ],
+  details: [
+    "A tailored classic, the formal shirt combines sophistication and professionalism with its crisp lines and high-quality fabric—an essential for refined occasions.",
+    "Embrace nature's charm with the vibrant floral shirt, a playful yet stylish choice that effortlessly transitions from casual outings to laid-back gatherings.",
+    "Effortlessly merging comfort and style, the polo shirt's collared neckline and short sleeves make it a versatile, go-to option for both active pursuits and casual occasions.",
+    "The epitome of simplicity and comfort, the classic t-shirt is a daily essential, providing a versatile canvas for self-expression in various designs and styles.",
+   "Timeless and versatile, the check shirt adds casual sophistication with structured designs, effortlessly balancing a smart yet relaxed look for all seasons.",
+    "Elevate casual style with the full sleeve t-shirt—ideal for cooler weather and expressing your personality through various colors and designs. Fashion meets functionality in this must-have wardrobe staple.",
+
   ],
 );
 

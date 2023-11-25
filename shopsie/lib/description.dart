@@ -19,6 +19,7 @@ final String price;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
@@ -95,7 +96,7 @@ final String price;
               SizedBox(height: 25,),
               Center(
                   child: CustomElevatedButton(
-                    buttonText: "Login",
+                    buttonText: "Buy Now",
                     onPressed: () {
                     },
                   ),

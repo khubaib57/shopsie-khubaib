@@ -3,21 +3,19 @@ import 'package:shopsie/listview.dart';
 import 'package:shopsie/main_screen.dart';
 import 'common_things.dart';
 
-    SizedBox hspace = SizedBox(
-    height: 10,
-  );
-  
-class Categoties extends StatelessWidget {
+class AllCategories extends StatelessWidget {
   final String title;
   final List<String> imageUrls;
   final List<String> texts;
-  final List<VoidCallback> onTap;
+  final List<String> price;
+  final List<String> details;
 
-  const Categoties({
+  const AllCategories({
     required this.title,
     required this.imageUrls,
     required this.texts,
-    required this.onTap,
+      required this.price,
+      required this.details,
   });
 
   @override
@@ -43,15 +41,6 @@ class Categoties extends StatelessWidget {
             }));
           },
         ),
-        actions: [
-          IconButton(onPressed: (){
-             Navigator.push(context, MaterialPageRoute(builder: (context){return Listtview(title: "All Categories",
-  imageUrls: imageUrls,
-  texts:texts,
-  onTap: onTap,
-  );}));
-          }, icon: Icon(Icons.view_array,color: Colors.black,))
-        ],
       ),
       body: GridView.builder(
         itemCount: imageUrls.length,
@@ -60,11 +49,10 @@ class Categoties extends StatelessWidget {
         itemBuilder: (context, index) {
           return Padding(
             padding: EdgeInsets.only(top: 20,right: 15,left: 15),
-            child: DrawerContainer(imageUrl: imageUrls[index], text: texts[index],onTap: onTap[index],),
+            child: CategoriesContainer(imageUrl: imageUrls[index], text: texts[index],price: price[index],details: details[index],),
           );
         },
       ),
     );
   }
 }
-

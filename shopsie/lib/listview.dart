@@ -8,11 +8,14 @@ class Listtview extends StatelessWidget {
   final String title;
   final List<String> imageUrls;
   final List<String> texts;
+    final List<VoidCallback> onTap;
 
   const Listtview({
     required this.title,
     required this.imageUrls,
     required this.texts,
+    required this.onTap,
+    
   });
 
   @override
@@ -43,6 +46,7 @@ class Listtview extends StatelessWidget {
              Navigator.push(context, MaterialPageRoute(builder: (context){return Categoties(title: "All Categories",
    imageUrls: imageUrls,
   texts:texts,
+  onTap: onTap,
   );}));
           }, icon: Icon(Icons.view_array,color: Colors.black))
         ],

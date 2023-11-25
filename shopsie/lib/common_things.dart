@@ -216,25 +216,30 @@ class DrawerContainer extends StatelessWidget {
 
   final String imageUrl;
   final String text;
+  final VoidCallback onTap;
 
   const DrawerContainer({
     
     required this. imageUrl,
    required this. text,
+   required this. onTap,
   });
 
   @override
   Widget build(BuildContext context) {
     return Column(
               children: [
-                Container(
-                  height: 120,
-
-                child: Image.network( imageUrl, fit: BoxFit.cover,),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                ),   
+                InkWell(
+                  child: Container(
+                    height: 120,
                 
+                  child: Image.network( imageUrl, fit: BoxFit.cover,),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                  ),   
+                  
+                  ),
+                  onTap: onTap,
                 ),
                 SizedBox(
                   height: 10,
@@ -261,6 +266,54 @@ class listclass extends StatelessWidget {
       leading: Image.network(imageUrl),
       title: Text(text),
     );
+  }
+}
+
+class CategoriesContainer extends StatelessWidget {
+    final String imageUrl;
+  final String text;
+  final String price;
+  final String details;
+    const CategoriesContainer({
+    
+    required this. imageUrl,
+   required this. text,
+   required this. price,
+   required this. details,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+              children: [
+                InkWell(
+                  child: Container(
+                    height: 120,
+                
+                  child: Image.network( imageUrl, fit: BoxFit.cover,),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                  ),   
+                  
+                  ),
+                  onTap: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+          return Description(
+              imageUrl: imageUrl, price: price, text: text, details: details);
+        }));
+      },
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Text(text,style: TextStyle(fontSize: 18, ),),
+                
+                SizedBox(
+                  height: 6,
+                ),
+                Text(price,style: TextStyle(fontSize: 16,color: Colors.purple),),
+              ],
+            );
   }
 }
 
