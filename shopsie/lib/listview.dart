@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:shopsie/listview.dart';
+import 'package:shopsie/categories.dart';
+import 'package:shopsie/drawer.dart';
 import 'package:shopsie/main_screen.dart';
 import 'common_things.dart';
 
-    SizedBox hspace = SizedBox(
-    height: 10,
-  );
-  
-class Categoties extends StatelessWidget {
+class Listtview extends StatelessWidget {
   final String title;
   final List<String> imageUrls;
   final List<String> texts;
 
-  const Categoties({
+  const Listtview({
     required this.title,
     required this.imageUrls,
     required this.texts,
@@ -43,25 +40,24 @@ class Categoties extends StatelessWidget {
         ),
         actions: [
           IconButton(onPressed: (){
-             Navigator.push(context, MaterialPageRoute(builder: (context){return Listtview(title: "All Categories",
-  imageUrls: imageUrls,
+             Navigator.push(context, MaterialPageRoute(builder: (context){return Categoties(title: "All Categories",
+   imageUrls: imageUrls,
   texts:texts,
   );}));
-          }, icon: Icon(Icons.view_array,color: Colors.black,))
+          }, icon: Icon(Icons.view_array,color: Colors.black))
         ],
       ),
-      body: GridView.builder(
+      body: ListView.builder(
         itemCount: imageUrls.length,
-        gridDelegate:
-            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
         itemBuilder: (context, index) {
           return Padding(
             padding: EdgeInsets.only(top: 20,right: 15,left: 15),
-            child: DrawerContainer(imageUrl: imageUrls[index], text: texts[index]),
+            child: listclass(imageUrl: imageUrls[index], text: texts[index]),
           );
         },
-      ),
-    );
+      )
+      
+      
+      );
   }
 }
-

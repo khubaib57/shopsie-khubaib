@@ -108,12 +108,165 @@ class Drawerr extends StatelessWidget {
        ),
 
       
-       Listtilee(icon: Icons.shop,text: "Shirts",),
-       Listtilee(icon: Icons.shop,text: "Bottoms",),
-       Listtilee(icon: Icons.shop,text: "Shoes",),
-       Listtilee(icon: Icons.shop,text: "Heels",),
-       Listtilee(icon: Icons.watch,text: "Accessories",),
-       Listtilee(icon: Icons.shop,text: "Tops",),
+       Listtilee(icon: Icons.shop,text: "Shirts",
+       onPressed: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return Categoties(
+  title: "Shirts",
+  imageUrls: [
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcu10cHoVjy1Uq8JD9y9cCO4f2OjGJi94CZQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqu2UCyDHkBlEq8daM16H8DVkLXAeUADHQ_Q&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7zxdXeSSPBZOYlEWILQNx5YB2I3XtJiGrA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnWsYiKmJBsMDF8FdAS_sJOxavai5AKxkiw&usqp=CAU",
+  ],
+  texts: [
+    "Formal shirt",
+    "flowral shirt ",
+    "polo shirt",
+    "t shirt ",
+   "check shirt",
+    "full sleeve t shirt",
+  ],
+);
+
+                }));
+       
+       },
+       ),
+
+
+       Listtilee(icon: Icons.shop,text: "Bottoms",
+       onPressed: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return Categoties(
+  title: "Shirts",
+  imageUrls: [
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcu10cHoVjy1Uq8JD9y9cCO4f2OjGJi94CZQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqu2UCyDHkBlEq8daM16H8DVkLXAeUADHQ_Q&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7zxdXeSSPBZOYlEWILQNx5YB2I3XtJiGrA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnWsYiKmJBsMDF8FdAS_sJOxavai5AKxkiw&usqp=CAU",
+  ],
+  texts: [
+    "Formal shirt",
+    "flowral shirt ",
+    "polo shirt",
+    "t shirt ",
+   "check shirt",
+    "full sleeve t shirt",
+  ],
+);
+
+                }));
+       
+       },),
+       Listtilee(icon: Icons.shop,text: "Shoes",
+       onPressed: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return Categoties(
+  title: "Shirts",
+  imageUrls: [
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcu10cHoVjy1Uq8JD9y9cCO4f2OjGJi94CZQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqu2UCyDHkBlEq8daM16H8DVkLXAeUADHQ_Q&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7zxdXeSSPBZOYlEWILQNx5YB2I3XtJiGrA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnWsYiKmJBsMDF8FdAS_sJOxavai5AKxkiw&usqp=CAU",
+  ],
+  texts: [
+    "Formal shirt",
+    "flowral shirt ",
+    "polo shirt",
+    "t shirt ",
+   "check shirt",
+    "full sleeve t shirt",
+  ],
+);
+
+                }));
+       
+       },),
+       Listtilee(icon: Icons.shop,text: "Heels",
+       onPressed: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return Categoties(
+  title: "Shirts",
+  imageUrls: [
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcu10cHoVjy1Uq8JD9y9cCO4f2OjGJi94CZQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqu2UCyDHkBlEq8daM16H8DVkLXAeUADHQ_Q&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7zxdXeSSPBZOYlEWILQNx5YB2I3XtJiGrA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnWsYiKmJBsMDF8FdAS_sJOxavai5AKxkiw&usqp=CAU",
+  ],
+  texts: [
+    "Formal shirt",
+    "flowral shirt ",
+    "polo shirt",
+    "t shirt ",
+   "check shirt",
+    "full sleeve t shirt",
+  ],
+);
+
+                }));
+       
+       },),
+       Listtilee(icon: Icons.watch,text: "Accessories",
+       onPressed: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return Categoties(
+  title: "Shirts",
+  imageUrls: [
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcu10cHoVjy1Uq8JD9y9cCO4f2OjGJi94CZQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqu2UCyDHkBlEq8daM16H8DVkLXAeUADHQ_Q&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7zxdXeSSPBZOYlEWILQNx5YB2I3XtJiGrA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnWsYiKmJBsMDF8FdAS_sJOxavai5AKxkiw&usqp=CAU",
+  ],
+  texts: [
+    "Formal shirt",
+    "flowral shirt ",
+    "polo shirt",
+    "t shirt ",
+   "check shirt",
+    "full sleeve t shirt",
+  ],
+);
+
+                }));
+       
+       },),
+       Listtilee(icon: Icons.shop,text: "Tops",
+       onPressed: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return Categoties(
+  title: "Shirts",
+  imageUrls: [
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIc2hpQl-0lkgviNmRcQnWNLT8GLAIzYyNA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMu7yMog4Cw_k8KqaZKqfwCyCa7ao5oJ4rA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcu10cHoVjy1Uq8JD9y9cCO4f2OjGJi94CZQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqu2UCyDHkBlEq8daM16H8DVkLXAeUADHQ_Q&usqp=CAU",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7zxdXeSSPBZOYlEWILQNx5YB2I3XtJiGrA&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnWsYiKmJBsMDF8FdAS_sJOxavai5AKxkiw&usqp=CAU",
+  ],
+  texts: [
+    "Formal shirt",
+    "flowral shirt ",
+    "polo shirt",
+    "t shirt ",
+   "check shirt",
+    "full sleeve t shirt",
+  ],
+);
+
+                }));
+       
+       },),
        Divider(),
        
 

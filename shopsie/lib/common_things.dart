@@ -244,3 +244,23 @@ class DrawerContainer extends StatelessWidget {
             );
   }
 }
+
+class listclass extends StatelessWidget {
+  final String imageUrl;
+  final String text;
+
+  const listclass({
+    
+    required this. imageUrl,
+   required this. text,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      leading: Image.network(imageUrl),
+      title: Text(text),
+    );
+  }
+}
+
